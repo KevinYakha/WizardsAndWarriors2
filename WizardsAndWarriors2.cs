@@ -14,7 +14,12 @@ static class GameMaster
 
     public static string Describe(TravelMethod travelMethod)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(TravelMethod) method");
+        if (travelMethod == TravelMethod.Walking)
+            return "You're traveling to your destination by walking.";
+        else if (travelMethod == TravelMethod.Horseback)
+            return "You're traveling to your destination on horseback.";
+        else
+            return "Something went wrong.";
     }
 
     public static string Describe(Character character, Destination destination, TravelMethod travelMethod)
