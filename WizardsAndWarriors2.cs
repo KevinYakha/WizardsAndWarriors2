@@ -4,7 +4,7 @@ static class GameMaster
 {
     public static string Describe(Character character)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character) method");
+        return $"You're a level {character.Level} {character.Class} with {character.HitPoints} hit points.";
     }
 
     public static string Describe(Destination destination)
