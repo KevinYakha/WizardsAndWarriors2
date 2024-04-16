@@ -9,7 +9,7 @@ static class GameMaster
 
     public static string Describe(Destination destination)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Destination) method");
+        return $"You've arrived at {destination.Name}, which has {destination.Inhabitants} inhabitants.";
     }
 
     public static string Describe(TravelMethod travelMethod)
